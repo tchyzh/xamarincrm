@@ -5,15 +5,15 @@ require 'net/http'
 ### PROPERTIES TO SET
 APP_NAME = "Xamarin CRM"
 
-ANDROID_DIR = "/MobileApp/XamarinCRM.Android"
-IOS_DIR = "/MobileApp/XamarinCRM.iOS"
-TEST_DIR = "/MobileApp/XamarinCRM.UITest"
-PACKAGE_DIR = "/MobileApp/packages/Xamarin.UITest.1.2.0"
+ANDROID_DIR = "/src/MobileApp/XamarinCRM.Android"
+IOS_DIR = "/src/MobileApp/XamarinCRM.iOS"
+TEST_DIR = "/src/MobileApp/XamarinCRM.UITest"
+PACKAGE_DIR = "/src/MobileApp/packages/Xamarin.UITest.1.2.0"
 
-SLN_FILE = "/MobileApp/XamarinCRM.sln"
-APK_FILE = "/MobileApp/XamarinCRM.Android/bin/Release/com.xamarin.xamarincrm-Signed.apk"
-IPA_FILE = "/MobileApp/XamarinCRM.iOS/bin/iPhone/Debug/XamarinCRM_Debug.ipa"
-DSYM_FILE = "/MobileApp/XamarinCRM.iOS/bin/iPhone/Debug/XamarinCRMiOS.app.dSYM"
+SLN_FILE = "/src/MobileApp/XamarinCRM.sln"
+APK_FILE = "/src/MobileApp/XamarinCRM.Android/bin/Release/com.xamarin.xamarincrm-Signed.apk"
+IPA_FILE = "/src/MobileApp/XamarinCRM.iOS/bin/iPhone/Debug/XamarinCRM_Debug.ipa"
+DSYM_FILE = "/src/MobileApp/XamarinCRM.iOS/bin/iPhone/Debug/XamarinCRMiOS.app.dSYM"
 
 # ANDROID_KEYSTORE = "debug.keystore"
 

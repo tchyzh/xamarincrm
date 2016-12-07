@@ -10,7 +10,7 @@ IOS_DIR = "/src/MobileApp/XamarinCRM.iOS"
 TEST_DIR = "/src/MobileApp/XamarinCRM.UITest"
 PACKAGE_DIR = "/src/MobileApp/packages/Xamarin.UITest.1.2.0"
 
-SLN_FILE = "/src/MobileApp/XamarinCRM.sln"
+SLN_FILE = "../../src/MobileApp/XamarinCRM.sln"
 APK_FILE = "/src/MobileApp/XamarinCRM.Android/bin/Release/com.xamarin.xamarincrm-Signed.apk"
 IPA_FILE = "/src/MobileApp/XamarinCRM.iOS/bin/iPhone/Debug/XamarinCRM_Debug.ipa"
 DSYM_FILE = "/src/MobileApp/XamarinCRM.iOS/bin/iPhone/Debug/XamarinCRMiOS.app.dSYM"

@@ -5,15 +5,15 @@ require 'net/http'
 ### PROPERTIES TO SET
 APP_NAME = "Xamarin CRM"
 
-ANDROID_DIR = "../../src/MobileApp/XamarinCRM.Android"
-IOS_DIR = "../../src/MobileApp/XamarinCRM.iOS"
-TEST_DIR = "../../src/MobileApp/XamarinCRM.UITest"
-PACKAGE_DIR = "../../src/MobileApp/packages/Xamarin.UITest.1.2.0"
+ANDROID_DIR = "/src/MobileApp/XamarinCRM.Android"
+IOS_DIR = "/src/MobileApp/XamarinCRM.iOS"
+TEST_DIR = "/src/MobileApp/XamarinCRM.UITest"
+PACKAGE_DIR = "/src/MobileApp/packages/Xamarin.UITest.1.2.0"
 
-SLN_FILE = "../../src/MobileApp/XamarinCRM.sln"
-APK_FILE = "../../src/MobileApp/XamarinCRM.Android/bin/Release/com.xamarin.xamarincrm-Signed.apk"
-IPA_FILE = "../../src/MobileApp/XamarinCRM.iOS/bin/iPhone/Debug/XamarinCRM_Debug.ipa"
-DSYM_FILE = "../../src/MobileApp/XamarinCRM.iOS/bin/iPhone/Debug/XamarinCRMiOS.app.dSYM"
+SLN_FILE = "/src/MobileApp/XamarinCRM.sln"
+APK_FILE = "/src/MobileApp/XamarinCRM.Android/bin/Release/com.xamarin.xamarincrm-Signed.apk"
+IPA_FILE = "/src/MobileApp/XamarinCRM.iOS/bin/iPhone/Debug/XamarinCRM_Debug.ipa"
+DSYM_FILE = "/src/MobileApp/XamarinCRM.iOS/bin/iPhone/Debug/XamarinCRMiOS.app.dSYM"
 
 # ANDROID_KEYSTORE = "debug.keystore"
 
@@ -36,7 +36,7 @@ namespace :build do
   desc "Builds the Android project"
   task :android => [:restore_packages] do
     # puts "Adding maps to manifest"
-		# addMaptoManifest("../../src/MobileApp/XamarinCRM.Android/Properties/AndroidManifest.xml")
+		# addMaptoManifest("/src/MobileApp/XamarinCRM.Android/Properties/AndroidManifest.xml")
     puts "building Android project with:"
     time = time_cmd "xbuild #{ANDROID_DIR}/*.csproj /p:Configuration=Release /t:SignAndroidPackage /verbosity:quiet /flp:LogFile=build_android.log" # /verbosity:quiet
     size = (File.size(APK_FILE)/1000000.0).round(1)
